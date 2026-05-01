@@ -1,0 +1,719 @@
+{
+  "info": {
+    "_postman_id": "7578d3af-e468-4262-84c3-0b6cf8cf920f",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54313123",
+    "_collection_link": "https://go.postman.co/collection/54313123-7578d3af-e468-4262-84c3-0b6cf8cf920f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Finance Tracker",
+      "item": [
+        {
+          "name": "Transactions",
+          "item": [
+            {
+              "name": "Filters",
+              "item": [
+                {
+                  "name": "category, type and month",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/transactions/filter?category={{category}}&type={{transaction_type}}&month={{month}}",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "transactions",
+                        "filter"
+                      ],
+                      "query": [
+                        {
+                          "key": "category",
+                          "value": "{{category}}"
+                        },
+                        {
+                          "key": "type",
+                          "value": "{{transaction_type}}"
+                        },
+                        {
+                          "key": "month",
+                          "value": "{{month}}"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "category and type",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/transactions/filter?category={{category}}&type={{transaction_type}}",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "transactions",
+                        "filter"
+                      ],
+                      "query": [
+                        {
+                          "key": "category",
+                          "value": "{{category}}"
+                        },
+                        {
+                          "key": "type",
+                          "value": "{{transaction_type}}"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "category and month",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": ""
+                    },
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/transactions/filter?category={{category}}&month={{month}}",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "transactions",
+                        "filter"
+                      ],
+                      "query": [
+                        {
+                          "key": "category",
+                          "value": "{{category}}"
+                        },
+                        {
+                          "key": "month",
+                          "value": "{{month}}"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "type and month",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/transactions/filter?type={{transaction_type}}&month={{month}}",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "transactions",
+                        "filter"
+                      ],
+                      "query": [
+                        {
+                          "key": "type",
+                          "value": "{{transaction_type}}"
+                        },
+                        {
+                          "key": "month",
+                          "value": "{{month}}"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "category",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/transactions/filter?category={{category}}",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "transactions",
+                        "filter"
+                      ],
+                      "query": [
+                        {
+                          "key": "category",
+                          "value": "{{category}}"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "type",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/transactions/filter?type={{transaction_type}}",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "transactions",
+                        "filter"
+                      ],
+                      "query": [
+                        {
+                          "key": "type",
+                          "value": "{{transaction_type}}"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "month",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://127.0.0.1:8000/transactions/filter?month={{month}}",
+                      "protocol": "http",
+                      "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                      ],
+                      "port": "8000",
+                      "path": [
+                        "transactions",
+                        "filter"
+                      ],
+                      "query": [
+                        {
+                          "key": "month",
+                          "value": "{{month}}"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "add transaction",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "pm.test(\"Successful POST request\", function () {",
+                      "    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+                      "});",
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "packages": {},
+                    "requests": {}
+                  }
+                }
+              ],
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"amount\": {{amount}},\n  \"category\": \"{{category}}\",\n  \"type\": \"{{type}}\",\n  \"date\": \"{{date}}\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/transactions",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "transactions"
+                  ]
+                },
+                "description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+              },
+              "response": []
+            },
+            {
+              "name": "list transactions",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/transactions",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "transactions"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "update transaction",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"amount\": {{amount}},\r\n  \"category\": \"{{category}}\",\r\n  \"type\": \"{{type}}\",\r\n  \"date\": \"{{date}}\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/transactions/{{transaction_id}}?force={{force}}",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "transactions",
+                    "{{transaction_id}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "force",
+                      "value": "{{force}}"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "delete transaction",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/transactions/{{transaction_id}}",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "transactions",
+                    "{{transaction_id}}"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Budget",
+          "item": [
+            {
+              "name": "add budget",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"category\": \"{{category}}\",\r\n  \"limit_amount\": {{budget_amount}}\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/budgets/",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "budgets",
+                    ""
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "list budgets",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"category\": \"{{category}}\",\r\n  \"limit_amount\": {{budget_amount}}\r\n}"
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/budgets/",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "budgets",
+                    ""
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "update budget",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"limit_amount\": {{amount}}\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/budgets/{{category}}",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "budgets",
+                    "{{category}}"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "delete budget",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:8000/budgets/{{category}}",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "budgets",
+                    "{{category}}"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Budget Alerts",
+          "item": [
+            {
+              "name": "month wise alerts",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/budget/alerts?month={{month}}",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "budget",
+                    "alerts"
+                  ],
+                  "query": [
+                    {
+                      "key": "month",
+                      "value": "{{month}}"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Spending Trends",
+          "item": [
+            {
+              "name": "month wise trend",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/trends?category={{category}}",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "trends"
+                  ],
+                  "query": [
+                    {
+                      "key": "category",
+                      "value": "{{category}}"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Insights",
+          "item": [
+            {
+              "name": "spending insights",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/insights?month={{month}}",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "insights"
+                  ],
+                  "query": [
+                    {
+                      "key": "month",
+                      "value": "{{month}}"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Summary",
+          "item": [
+            {
+              "name": "track finances - summary",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/summary?month={{month}}&breakdown={{breakdown_bool}}",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "summary"
+                  ],
+                  "query": [
+                    {
+                      "key": "month",
+                      "value": "{{month}}"
+                    },
+                    {
+                      "key": "breakdown",
+                      "value": "{{breakdown_bool}}"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "month summary",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/summary?month={{month}}",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "summary"
+                  ],
+                  "query": [
+                    {
+                      "key": "month",
+                      "value": "{{month}}"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "expenses breakdown",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:8000/summary?breakdown={{breakdown_bool}}",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "8000",
+                  "path": [
+                    "summary"
+                  ],
+                  "query": [
+                    {
+                      "key": "breakdown",
+                      "value": "{{breakdown_bool}}"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
