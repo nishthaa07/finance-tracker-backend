@@ -68,7 +68,7 @@ finance-tracker/
 ## ⚙️ Setup & Run
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/nishthaa07/finance-tracker-backend
 cd finance-tracker
 
 python -m venv venv
